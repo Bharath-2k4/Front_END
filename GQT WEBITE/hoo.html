@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Training Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5em;
+        }
+        .menu-toggle {
+            display: none;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .box {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                background: #333;
+                width: 100%;
+                top: 60px;
+                left: 0;
+                text-align: center;
+            }
+            nav ul.show {
+                display: flex;
+            }
+            nav ul li {
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Training Site</div>
+        <div class="menu-toggle">&#9776;</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box">
+            <img src="course1.jpg" alt="Course 1">
+            <h2>Course 1</h2>
+            <p>Learn the fundamentals of web development.</p>
+        </div>
+        <div class="box">
+            <img src="course2.jpg" alt="Course 2">
+            <h2>Course 2</h2>
+            <p>Advanced JavaScript techniques and frameworks.</p>
+        </div>
+        <div class="box">
+            <img src="course3.jpg" alt="Course 3">
+            <h2>Course 3</h2>
+            <p>Master CSS for modern, responsive designs.</p>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
