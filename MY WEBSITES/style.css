@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images.jpeg);
+    background-size: cover;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .xo {
+        display: grid;
+    }
+    .contact {
+        display: grid;
+    }
+    .contact-main img {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .xo {   
+        display: flex;
+    }
+    .contact {
+        display: flex;
+    }
+    .contact-main img {
+        width: 100%;
+    };
+    
+}
+
+  
+
+.navvv{
+    width: 100%;
+    position:fixed;
+    z-index: 9999;
+}
+
+.navbar {
+    background-color: #171D25;
+    height: 65px;
+}
+
+/* Increase brand size */
+.navbar-brand {
+    font-size: 30px;
+    /* Make brand text bigger */
+    font-weight: bold;
+    /* Make it bold */
+}
+
+/* Reduce size of navbar items */
+.navbar-nav .nav-link {
+    font-size: 14px;
+    /* Make navigation items smaller */
+    padding: 5px 10px;
+    /* Adjust padding for better spacing */
+}
+
+/* Adjust the alignment of brand text */
+.navbar-brand {
+    line-height: 55px;
+    /* Center vertically */
+}
+
+.navbar-collapse ul li a:hover {
+    color: rgb(47, 152, 233) !important;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+    /* Responsive font size */
+    font-weight: bold;
+}
+
+.header h1 {
+    font-size: 2.5vw;
+    /* Responsive font size */
+    font-weight: bold;
+    color: white;
+    /* Initial color */
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8),
+        0px 0px 20px rgba(255, 255, 255, 0.6);
+    animation: colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: white;
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8),
+            0px 0px 20px rgba(255, 255, 255, 0.6);
+    }
+
+    50% {
+        color: #66ccff;
+        /* Light Blue */
+        text-shadow: 0px 0px 15px rgba(102, 204, 255, 0.8),
+            0px 0px 25px rgba(102, 204, 255, 0.6);
+    }
+
+    100% {
+        color: cyan;
+        /* Dark Blue */
+        text-shadow: 0px 0px 20px rgb(0, 255, 255),
+            0px 0px 30px rgb(0, 208, 255);
+    }
+}
+
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    height: 600px;
+    width: 100%;
+}
+
+.carousel img {
+    height: 600px;
+}
+
+.featured {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.container a {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: blue;
+    cursor: pointer;
+    text-decoration: none; /* Removes underline */
+}
+
+.card img {
+    height: 350px;
+}
+.img1 {
+    margin-top: 40px;
+    position: relative; /* Needed for absolute positioning inside */
+    width: 100%;
+    height: 600px; /* Ensure height matches the image */
+}
+
+.img1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.submit {
+    position: absolute; /* Positioning inside .img1 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the button */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit a {
+    text-decoration: none;
+    color: white;
+}
+
+.submit:hover {
+    font-size: 35px;
+    background-image: linear-gradient(90deg, #C12185,#EA248B,#A323AA);
+    color: navy;
+}
+
+.ro img{
+    width: 26%;
+}
+.ho h1{
+    width: 50%;
+    display: grid;
+}
+.yo h1{
+    padding-left: 10px;
+    margin-top: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    font-weight:900;
+
+
+}
+.container card {
+    height: 200px;
+}
+h1{
+    text-align: left;
+
+}
