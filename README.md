@@ -10,7 +10,6 @@ This repository contains multiple front-end projects, including:
 
 - 🎮 Gaming Landing Pages
 - 🏢 GQT Website
-- 🚗 Vehicle & Product Landing Pages
 - 📹 Video Background Web Pages
 - 🎨 Responsive UI Designs
 - 📱 Mobile-Friendly Layouts
